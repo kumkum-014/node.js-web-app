@@ -1,11 +1,5 @@
-#Terraform
-.terraform*
-*.tfstate*
-*.tfvars
-
-# key
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.pem
 *.key
-*.pemnode_modules
-.env
-npm-debug.log
-
