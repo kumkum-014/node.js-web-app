@@ -20,14 +20,10 @@ variable "key-pair" {
   type = string
 }
 
-variable "network-interface-id" {
-  type = string
-}
-
-variable "device-index" {
-  type = number
-}
-
 variable "repository-url" {
   type = string
+}
+
+variable "subnet_id" {
+  type = string 
 }

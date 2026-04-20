@@ -1,33 +1,31 @@
-variable "ami-id" {
-  type = string
-}
+variable "ami-id" {}
+variable "iam-instance-profile" {}
+variable "instance-type" {}
+variable "key-pair" {}
 
-variable "iam-instance-profile" {
-  default = ""
-  type = string
-}
+variable "repository-url" {}
+variable "repository-test-url" {}
+variable "repository-staging-url" {}
 
-variable "instance-type" {
-  type = string
-  default = "t2.micro"
-}
+variable "instance-id" {}
+variable "bucket-logs-name" {}
 
-variable "name" {
-  type = string
-}
+variable "public-dns" {}
 
-variable "key-pair" {
-  type = string
-}
+variable "admin-username" {}
+variable "admin-password" {}
+variable "admin-fullname" {}
+variable "admin-email" {}
 
-variable "network-interface-id" {
-  type = string
-}
+variable "remote-repo" {}
 
-variable "device-index" {
-  type = number
-}
+variable "job-name" {}
+variable "job-id" {}
 
-variable "repository-url" {
-  type = string
+variable "bucket-config-name" {}
+
+variable "name" {}
+
+variable "subnet_id" {
+ type = string
 }
